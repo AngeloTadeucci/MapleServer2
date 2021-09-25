@@ -101,11 +101,11 @@ namespace MapleServer2
 
         private static void InitDatabase()
         {
-            if (DatabaseManager.DatabaseExists())
-            {
-                Logger.Info("Database already exists.");
-                return;
-            }
+                    if (DatabaseManager.DatabaseExists())
+                    {
+                        Logger.Info("Database already exists.");
+                        return;
+                    }
             Logger.Info("Creating database...");
             DatabaseManager.CreateDatabase();
 
