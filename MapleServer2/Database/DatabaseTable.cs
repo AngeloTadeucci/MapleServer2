@@ -7,6 +7,8 @@ namespace MapleServer2.Database;
 public abstract class DatabaseTable
 {
     protected string TableName;
+              
+                     
     protected static QueryFactory QueryFactory
     {
         get
