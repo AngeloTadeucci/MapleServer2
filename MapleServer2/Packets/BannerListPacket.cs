@@ -9,7 +9,7 @@ public static class BannerListPacket
     public static PacketWriter SetBanner(List<Banner> banners)
     {
         PacketWriter pWriter = PacketWriter.Of(SendOp.BANNER_LIST);
-        pWriter.WriteShort((short) banners.Count);
+        pWriter.WriteShort((short) banners.Count); // blah
         foreach (Banner banner in banners)
         {
             pWriter.WriteInt(banner.Id);
